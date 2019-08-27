@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
 /**
  * 
  * @author Naveen
@@ -23,9 +22,7 @@ public class WaitTypes {
 	}
 	
 	// we will have methods which returns the WebElement 
-	// on demand of explicit wait 
-	
-	
+	// on demand of explicit wait
 	// this method will return WebElement 
 	// when on the page it is available for presence
 	// presenceOfElementLocated
@@ -59,8 +56,6 @@ public class WaitTypes {
 		return null;
 	}
 	
-	
-	
 	public WebElement waitForElement(By locator, int timeout){
 		try{
 			WebDriverWait wait = new WebDriverWait(driver, timeout);
@@ -77,8 +72,6 @@ public class WaitTypes {
 		return null;
 	}
 	
-	
-
 	public WebElement elementToBeClickable(By locator, int timeout){
 		try{
 			WebDriverWait wait = new WebDriverWait(driver, timeout);
