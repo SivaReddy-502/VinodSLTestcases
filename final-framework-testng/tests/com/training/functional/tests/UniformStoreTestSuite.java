@@ -42,6 +42,8 @@ public class UniformStoreTestSuite {
 	private ScreenShot screenShot;
 	private ExtentLogger eLog= new ExtentLogger();
 	private ExtentTest logger;
+	
+	//==============change the below inputs for each run======================
 	private String firstName="First38";
 	private String lastName="Last38";
 	private String emailId="email38@gmail.com";
@@ -50,6 +52,7 @@ public class UniformStoreTestSuite {
 	private String cpassword="Pass38";
 	private String oldPassword="Pass38";
 	private String newPassword="Pass39";
+	//==============Inputs Ends Here======================	
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws IOException {	
