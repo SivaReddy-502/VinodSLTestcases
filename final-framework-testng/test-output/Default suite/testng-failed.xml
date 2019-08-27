@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test" verbose="2">
+    <classes>
+      <class name="com.training.functional.tests.UniformStoreTestSuite"/>
+    </classes>
+  </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="com.training.regression.tests.LoginExcelTest">
+      <class name="com.training.functional.tests.UniformStoreTestSuite">
         <methods>
-          <include name="tearDown"/>
-          <include name="loginDBTest" invocation-numbers="3 4"/>
+          <include name="logout"/>
           <include name="setUpBeforeClass"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="UFM_002" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.training.regression.tests.LoginExcelTest -->
+      </class> <!-- com.training.functional.tests.UniformStoreTestSuite -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
