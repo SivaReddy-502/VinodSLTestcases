@@ -37,13 +37,13 @@ public class UniformChangePasswordPage {
 	public void typePassword(String pass) {
 		this.password.clear();
 		this.password.sendKeys(pass);
-		logger.log(LogStatus.PASS, "Type Password");
+		logger.log(LogStatus.PASS, "Type New Password");
 	}
 	
 	public void typeConfirmPassword(String pass) {
 		this.confirmPassword.clear();
 		this.confirmPassword.sendKeys(pass);
-		logger.log(LogStatus.PASS, "Type Confirm Password");
+		logger.log(LogStatus.PASS, "Confirm New Password");
 	}	
 
 	public void clickContinue() {

@@ -44,14 +44,14 @@ public class UniformStoreTestSuite {
 	private ExtentTest logger;
 	
 	//==============change the below inputs for each run======================
-	private String firstName="First38";
-	private String lastName="Last38";
-	private String emailId="email38@gmail.com";
-	private String phoneNumber="9890989738";	
-	private String password="Pass38";
-	private String cpassword="Pass38";
-	private String oldPassword="Pass38";
-	private String newPassword="Pass39";
+	private String firstName="First39";
+	private String lastName="Last39";
+	private String emailId="email39@gmail.com";
+	private String phoneNumber="9890989739";	
+	private String password="Pass39";
+	private String cpassword="Pass39";
+	private String oldPassword="Pass39";
+	private String newPassword="Pass40";
 	//==============Inputs Ends Here======================	
 	
 	@BeforeClass
@@ -97,8 +97,10 @@ public class UniformStoreTestSuite {
 		driver.get(baseUrl);
 	}
 	
-	@Test(priority=1 , enabled=true)
+	@Test(priority=1 , enabled=false)
 	public void UFM_001(Method method) throws Exception {	
+		
+		//Testcase to Execute New User Registration Test
 		
 		//Initialise the variables
 		String faxNumber="9890989771";
@@ -152,7 +154,9 @@ public class UniformStoreTestSuite {
 	}
 	
 	@Test(priority=2, enabled=true)
-	public void UFM_002(Method method) throws Exception {		
+	public void UFM_002(Method method) throws Exception {	
+		
+		//Testcase to Execute login Test
 		
 		//Verify Uniform Store homepage is launched and exit test if not opened
 		homePage.verifyHomePageLaunched();
@@ -181,6 +185,7 @@ public class UniformStoreTestSuite {
 	
 	@Test(priority=3, enabled=true)
 	public void UFM_003(Method method) throws Exception {		
+		//Testcase to Execute Change Password Test
 		
 		//Verify Uniform Store homepage is launched and exit test if not opened
 		homePage.verifyHomePageLaunched();
