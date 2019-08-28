@@ -201,10 +201,11 @@ public class UniformRegistrationPage {
 	}		
 	
 	public void verifyRegistrationPageLaunched() throws Exception {
-		wait.until(ExpectedConditions.visibilityOf(firstName));
-		String actual =driver.getTitle();
+		String actual;
 		String expected=title;
 		try{
+			wait.until(ExpectedConditions.visibilityOf(firstName));
+			actual =driver.getTitle();
 			Assert.assertEquals(expected, actual, "Verify Registion Form is Launched");
 			logger.log(LogStatus.PASS, "Verify Registion Form is Launched");
 		}catch(Exception e) {

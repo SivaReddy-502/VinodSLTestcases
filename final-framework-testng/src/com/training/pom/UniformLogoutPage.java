@@ -16,7 +16,7 @@ public class UniformLogoutPage {
 	private WebDriver driver; 
 	private WaitTypes wt;
 	private WebDriverWait wait;
-	private String expectedMessage="You have been logged off your account. It is now safe to leave the computer.";
+	private String logoffMessage="You have been logged off your account. It is now safe to leave the computer.";
 	ExtentTest logger;
 	
 	public UniformLogoutPage(WebDriver driver, ExtentTest logger) {
@@ -49,11 +49,13 @@ public class UniformLogoutPage {
 	}	
 		
 	public void verifyLogoutSuccessful() throws Exception {
-		wait.until(ExpectedConditions.visibilityOf(logoutMessage));
-		String actualMessage;	
-		actualMessage=logoutMessage.getText();
+		
+		String actual;
+		String expected=logoffMessage;
 		try{
-			Assert.assertEquals(actualMessage, expectedMessage, "Logout is Successful");
+			wait.until(ExpectedConditions.visibilityOf(logoutMessage));
+			actual=logoutMessage.getText();
+			Assert.assertEquals(actual, expected, "Logout is Successful");
 			logger.log(LogStatus.PASS, "Verify Logout is Successful");
 		}catch(Exception e) {
 			logger.log(LogStatus.FAIL, "Verify Logout is Successful");

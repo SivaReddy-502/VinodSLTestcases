@@ -32,10 +32,12 @@ public class UniformRegistrationSuccessPage {
 	private WebElement continueBtn; 			
 	
 	public void verifyRegistrationSuccessful() throws Exception {
-		//wait.until(ExpectedConditions.visibilityOf(successMessage));
-		String actualMessage =successMessage.getText();
+		String actual;
+		String expected = expectedMessage;
 		try{
-			Assert.assertEquals(true, true, "Verify User Registion is Successful");
+			wait.until(ExpectedConditions.visibilityOf(successMessage));
+			actual =successMessage.getText();
+			Assert.assertEquals(actual, expected, "Verify User Registion is Successful");
 			logger.log(LogStatus.PASS, "Verify User Registion is Successful");
 		}catch(Exception e) {
 			logger.log(LogStatus.FAIL, "Verify User Registion is Successful");

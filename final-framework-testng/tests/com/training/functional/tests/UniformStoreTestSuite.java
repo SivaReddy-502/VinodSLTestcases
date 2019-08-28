@@ -103,7 +103,7 @@ public class UniformStoreTestSuite {
 		//Testcase to Execute New User Registration Test
 
 		//Initialise the variables
-		String faxNumber="9890989771";
+		String faxNumber="9890989772";
 		String companyName="IBM";
 		String address1="Jayanagar";
 		String address2="Koramangala";

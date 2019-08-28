@@ -51,10 +51,11 @@ public class UniformHomePage {
 
 	public void verifyHomePageLaunched() throws Exception {
 		WaitTypes wt = new WaitTypes(this.driver);
-		WebElement ele = wt.elementToBeClickable(account, 5);
 		boolean expected=true;
-		boolean actual=ele.isDisplayed();
+		boolean actual;
 		try{
+			WebElement ele = wt.elementToBeClickable(account, 5);
+			actual=ele.isDisplayed();
 			Assert.assertEquals(expected, actual, "Verify Homepage is Launched");
 			logger.log(LogStatus.PASS, "Verify Homepage is Launched");
 		}catch(Exception e) {

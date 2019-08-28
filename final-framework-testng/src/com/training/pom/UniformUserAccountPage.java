@@ -40,10 +40,11 @@ public class UniformUserAccountPage {
 	}		
 
 	public void verifyLoginIsSuccessful() throws Exception {
-		wait.until(ExpectedConditions.titleIs(title));
-		String actual =driver.getTitle();
+		String actual;
 		String expected=title;
 		try{
+			wait.until(ExpectedConditions.titleIs(title));
+			actual =driver.getTitle();
 			Assert.assertEquals(expected, actual, "Verify User is Logged in Successfully");
 			logger.log(LogStatus.PASS, "Verify User is Logged in Successfully");
 		}catch(Exception e) {
@@ -53,10 +54,11 @@ public class UniformUserAccountPage {
 	}
 
 	public void verifyPasswordChangedSuccessful() throws Exception {
-		wait.until(ExpectedConditions.visibilityOf(changePassword));
-		String actual =driver.getTitle();
 		String expected=title;
+		String actual;
 		try{
+			wait.until(ExpectedConditions.visibilityOf(changePassword));
+			actual =driver.getTitle();
 			Assert.assertEquals(expected, actual, "Verify Password is Changed Successfully");
 			logger.log(LogStatus.PASS, "Verify Password is Changed Successfully");
 		}catch(Exception e) {

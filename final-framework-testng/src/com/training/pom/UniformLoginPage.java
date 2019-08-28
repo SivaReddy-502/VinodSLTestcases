@@ -66,10 +66,11 @@ public class UniformLoginPage {
 	}		
 
 	public void verifyLoginPageLaunched() throws Exception {
-		wait.until(ExpectedConditions.visibilityOf(userName));
 		boolean expected=true;
-		boolean actual=userName.isDisplayed();
+		boolean actual;
 		try{
+			wait.until(ExpectedConditions.visibilityOf(userName));
+			actual=userName.isDisplayed();
 			Assert.assertEquals(expected, actual, "Login Form is Displayed Successfully");
 			logger.log(LogStatus.PASS, "Verify Login Form is Displayed");
 		}catch(Exception e) {

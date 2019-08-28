@@ -52,10 +52,11 @@ public class UniformChangePasswordPage {
 	}
 
 	public void verifyPasswordPageLaunched() throws Exception {
-		wait.until(ExpectedConditions.elementToBeSelected(password));
-		String actual=driver.getTitle();
+		String actual;
 		String expected=title;
 		try{
+			wait.until(ExpectedConditions.elementToBeSelected(password));
+			actual=driver.getTitle();
 			Assert.assertEquals(expected, actual, "Verify Change Password Form is Launched");
 			logger.log(LogStatus.PASS, "Verify Change Password Form is Launched");
 		}catch(Exception e) {
