@@ -99,9 +99,13 @@ public class UniformStoreTestSuite {
 	
 	@Test(priority=1 , enabled=false)
 	public void UFM_001(Method method) throws Exception {	
+<<<<<<< HEAD
 		
 		//Testcase to Execute New User Registration Test
 		
+=======
+		//Testcase to Verify Successful New User Registration
+>>>>>>> branch 'develop' of https://github.com/fvinodh1978/SeleniumProjctes.git
 		//Initialise the variables
 		String faxNumber="9890989771";
 		String companyName="IBM";
@@ -154,10 +158,15 @@ public class UniformStoreTestSuite {
 	}
 	
 	@Test(priority=2, enabled=true)
+<<<<<<< HEAD
 	public void UFM_002(Method method) throws Exception {	
 		
 		//Testcase to Execute login Test
 		
+=======
+	public void UFM_002(Method method) throws Exception {		
+		//Testcase to Verify Successful User Login
+>>>>>>> branch 'develop' of https://github.com/fvinodh1978/SeleniumProjctes.git
 		//Verify Uniform Store homepage is launched and exit test if not opened
 		homePage.verifyHomePageLaunched();
 		homePage.clickAccount();
@@ -185,8 +194,12 @@ public class UniformStoreTestSuite {
 	
 	@Test(priority=3, enabled=true)
 	public void UFM_003(Method method) throws Exception {		
+<<<<<<< HEAD
 		//Testcase to Execute Change Password Test
 		
+=======
+		//Testcase to Verify Successful Password Change
+>>>>>>> branch 'develop' of https://github.com/fvinodh1978/SeleniumProjctes.git
 		//Verify Uniform Store homepage is launched and exit test if not opened
 		homePage.verifyHomePageLaunched();
 		homePage.clickAccount();
