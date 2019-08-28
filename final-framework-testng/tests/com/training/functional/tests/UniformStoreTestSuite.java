@@ -44,14 +44,14 @@ public class UniformStoreTestSuite {
 	private ExtentTest logger;
 	
 	//==============change the below inputs for each run======================
-	private String firstName="First39";
-	private String lastName="Last39";
-	private String emailId="email39@gmail.com";
-	private String phoneNumber="9890989739";	
-	private String password="Pass39";
-	private String cpassword="Pass39";
-	private String oldPassword="Pass39";
-	private String newPassword="Pass40";
+	private String firstName="Neha";
+	private String lastName="B";
+	private String emailId="neha@gmail.com";
+	private String phoneNumber="9241835892";	
+	private String password="Neha123";
+	private String cpassword="Neha123";
+	private String oldPassword="Neha123";
+	private String newPassword="Neha124";
 	//==============Inputs Ends Here======================	
 	
 	@BeforeClass
@@ -105,12 +105,12 @@ public class UniformStoreTestSuite {
 		//Initialise the variables
 		String faxNumber="9890989771";
 		String companyName="IBM";
-		String address1="DLF";
-		String address2="Ramapuram";
-		String cityName="Chennai";
-		String postcodeNumber="600015";
+		String address1="Jayanagar";
+		String address2="Koramangala";
+		String cityName="Bangalore";
+		String postcodeNumber="560082";
 		String countryName="India";
-		String zoneName="Tamil Nadu";
+		String zoneName="Karnataka";
 		String subscribe="No";
 		
 		//Verify Uniform Store homepage is launched and exit test if not opened
