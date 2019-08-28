@@ -97,7 +97,7 @@ public class UniformStoreTestSuite {
 		driver.get(baseUrl);
 	}
 	
-	@Test(priority=1 , enabled=false)
+	@Test(priority=1 , enabled=true)
 	public void UFM_001(Method method) throws Exception {	
 		
 		//Testcase to Execute New User Registration Test
