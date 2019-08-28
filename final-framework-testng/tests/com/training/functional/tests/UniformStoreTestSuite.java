@@ -99,7 +99,7 @@ public class UniformStoreTestSuite {
 	
 	@Test(priority=1 , enabled=true)
 	public void UFM_001(Method method) throws Exception {	
-		
+		//Testcase to Verify Successful New User Registration
 		//Initialise the variables
 		String faxNumber="9890989771";
 		String companyName="IBM";
@@ -153,7 +153,7 @@ public class UniformStoreTestSuite {
 	
 	@Test(priority=2, enabled=true)
 	public void UFM_002(Method method) throws Exception {		
-		
+		//Testcase to Verify Successful User Login
 		//Verify Uniform Store homepage is launched and exit test if not opened
 		homePage.verifyHomePageLaunched();
 		homePage.clickAccount();
@@ -181,7 +181,7 @@ public class UniformStoreTestSuite {
 	
 	@Test(priority=3, enabled=true)
 	public void UFM_003(Method method) throws Exception {		
-		
+		//Testcase to Verify Successful Password Change
 		//Verify Uniform Store homepage is launched and exit test if not opened
 		homePage.verifyHomePageLaunched();
 		homePage.clickAccount();
